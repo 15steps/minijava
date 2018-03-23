@@ -15,7 +15,7 @@ package atividade1;
 
 /* Insira as regras l�xicas abaixo */
 letter                  = [a-zA-Z]
-digit                   = [0-9]
+digit                   = ([1-9][0-9]+)|(0[^\d]+)|([1-9])|0
 alphanumeric            = {letter}|{digit}
 integer                 = {digit}+
 identifier              = ({letter}|[_])({alphanumeric}|[_])*
